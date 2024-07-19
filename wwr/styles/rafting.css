@@ -2,8 +2,9 @@
 
 body{
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 1000px;
     padding: 20px;
+    position: relative;
 }
 :root {
     --primary-color: #2364AA;
@@ -27,7 +28,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    border: 1px solid black;
+    max-width: 100%;
     padding: 10px;
+
+}
+
+img {
+    margin: 0 0.25rem 0 1rem;
+    width: 150px;
+    height: auto;
+    padding-left: 100px; 
 }
 
 p {
@@ -39,6 +55,10 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: center;
+    width: max-content;
+    
+
 }
 
 nav a {
@@ -46,6 +66,7 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
+    
 }
 
 nav a:link, nav a:visited {
@@ -108,6 +129,22 @@ section p {
     padding: 0;
     text-align: left;
 }
+
+.pictures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: clamp(1rem, 2vw, 1.25rem);
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+figcaption {
+    display: flex;
+    justify-content: flex-end;;
+}
+
 
 
 .sociallinks {
