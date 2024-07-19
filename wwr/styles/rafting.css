@@ -2,10 +2,10 @@
 
 body{
     font-family: var(--paragraph-font);
-    max-width: 1000px;
+    max-width: 960px;
     padding: 20px;
-    position: relative;
 }
+
 :root {
     --primary-color: #2364AA;
     --secondary-color: #FF9933;
@@ -28,22 +28,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    margin: 1rem auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 100px;
-    align-items: center;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
     border: 1px solid black;
-    max-width: 100%;
-    padding: 10px;
+    padding: 5px;
+    background-color: #73BFB8;
 
 }
 
 img {
-    margin: 0 0.25rem 0 1rem;
-    width: 150px;
+    grid-column: 1 / 2;
+    align-self: center;
+    margin: 0 15px 0 100px;
+    width: 120px;
     height: auto;
-    padding-left: 100px; 
+    
 }
 
 p {
@@ -55,18 +55,16 @@ nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin: 30px 40px 30px 60px;
     width: max-content;
-    
-
 }
 
 nav a {
     display: block;
     color: var(--nav-link-color);
     text-decoration: none;
-    padding: 1rem;
-    
+    padding: 1.5rem;
 }
 
 nav a:link, nav a:visited {
@@ -80,7 +78,8 @@ nav a:hover {
 
 div {
     position: relative;
-    max-width: 100%;
+    max-width: 700px;
+    padding: 7px;
 }
 
 .hero img {
@@ -91,9 +90,9 @@ div {
 
 .hero h1 {
     position: absolute;
-    width: 100%;
+    width: 98%;
     top: 3px;
-    left: 0;
+    left: 107px;
     color: white;
     font-size:40px;
     font-family:large;
@@ -104,7 +103,7 @@ div {
 
 .hero article {
     position: absolute;
-    left: 7%;
+    left: 21.5%;
     top: 60%;
     width: 84%;
     height: 114px;
@@ -117,42 +116,86 @@ div {
 
 article p {
     padding: 0;
+    margin: 1px 0 1px 2px;
 }
 
 article img {
     float: right;
     max-width: 150px;
+    margin: 1px;
 }
 
-section p {
-    margin:0;
+.hist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hist h2 {
+    justify-content: center;
+    width: 100%;
+    margin: 50px 100px 10px 430px; 
+}
+
+
+.hist img {
+    justify-content: flex-start;
+    width: 200px;
+    margin: 0;
+}
+
+.hist p {
+    justify-content: flex-end;
+    width: 650px;
+    margin: 25px;
     padding: 0;
     text-align: left;
 }
 
+section h2 {
+    margin: 50px 100px 10px 320px;
+}
+
 .pictures {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: clamp(1rem, 2vw, 1.25rem);
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    margin: 0 -190px;
 }
 
 figure {
-    margin: 0;
-    padding: 0;
+    width: 100px;
+    height: auto;
+    margin: 15px 50px;
 }
+
 figcaption {
+    width: 240px;
+    height: auto;
+    margin: 22px 90px;
+}
+
+footer {
     display: flex;
-    justify-content: flex-end;;
+    justify-content: center;
+    background-color: hsla(16, 49%, 40%, 0.7);
+    width: 100%;
+    margin: 0 -30px;
 }
 
 
 
 .sociallinks {
     text-decoration: none;
-    background-color: white;
+    background-color: hsla(16, 49%, 40%, 0); ;
+    width: 30px; 
+    height: 30px; 
+    margin: 40px 90px;
+
 }
 
 .sociallinks img {
-    width: fit-content; 
-    height: 40px; 
+    width: 30px; 
+    height: 30px; 
+    margin: 40px -30px;
 }
