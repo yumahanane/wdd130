@@ -177,20 +177,18 @@ figcaption {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color: hsla(16, 49%, 40%, 0.7);
     width: 100%;
     margin: 0 -30px;
 }
-
-
 
 .sociallinks {
     text-decoration: none;
     background-color: hsla(16, 49%, 40%, 0); ;
     width: 30px; 
     height: 30px; 
-    margin: 40px 90px;
+    margin: 40px 20px;
 
 }
 
@@ -199,3 +197,113 @@ footer {
     height: 30px; 
     margin: 40px -30px;
 }
+
+fieldset {
+    width: 200px;
+    height: 210px;
+    display: block;
+    border-radius: 0.5rem;
+    justify-self: last baseline;
+    grid-area: fieldset;
+}
+
+fieldset legend {
+    color: navy;
+    font-weight: 800;
+}
+
+.address p {
+    padding: 0.2em;
+}
+
+.map {
+    box-sizing: border-box;
+    width: 5px;
+    height: 5px;
+    justify-self: last baseline;
+    grid-area: map;
+    padding: 0;
+    margin: 0;    
+}
+
+form {
+    width: 400px;
+    margin: 10px auto;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    grid-area: form;
+}
+
+
+label, input, button, checkbox, radio, textarea, legend {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label, legend {
+    text-align: left;
+    padding: 0.5rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 370px;
+}
+
+input[type="radio"] {
+    width: 22px;
+    height: 22px;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+}
+
+.form-item {
+    display: grid;
+    padding: 5px;
+}
+
+button {
+    margin: 2rem 1rem 0.5rem;
+    background-color: #1d037d;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.employee {
+    display: flex;
+    grid-area: employee;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50px 1fr 2fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+    "form-title ."
+    "form fieldset"
+    "form map"
+    "employee employee"
+}
+
+.form-title p {
+    grid-area: form-title;
+    color: navy;
+    font-weight: 800;
+}
+
