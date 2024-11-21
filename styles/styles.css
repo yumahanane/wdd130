@@ -36,6 +36,7 @@ aside {
     padding: 1rem;
     background-color: rgba(0, 0, 255, 0.119);
     color: black;
+    text-align: center;
 }
 
 aside img {
