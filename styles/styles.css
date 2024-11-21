@@ -1,3 +1,7 @@
+:root {
+    --heading-text-color: black;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -35,7 +39,7 @@ aside {
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: 1rem;
     background-color: rgba(0, 0, 255, 0.119);
-    color: black;
+    color: var(--heading-text-color);
     text-align: center;
 }
 
