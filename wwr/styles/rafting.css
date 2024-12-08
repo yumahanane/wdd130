@@ -65,7 +65,7 @@ main {
     bottom: 60px;
     width: 750px;
     height: auto;
-    background-color:hsla(55, 66%, 79%, 0.616)
+    background-color:hsla(55, 66%, 79%, 0.816);
 }
 
 
@@ -76,9 +76,12 @@ article img {
 }
 
 article p {
+    font-family: 'DM Serif Text', 'Open Sans', Helvetica, sans-serif;
+    font-style: oblique;
     font-size: 1.2rem;
-    font-weight: 600;
-    margin-left: 10px;
+    font-weight: 500;
+    padding-right: 3rem;
+    text-align: end;
 }
 
 header {
@@ -153,6 +156,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 2rem;
+    margin: 2rem 0;
+    background-color: #a9a8bb;
 }
 
