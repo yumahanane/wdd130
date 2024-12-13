@@ -17,6 +17,11 @@ h1, h2 {
     color: Black;
 }
 
+h1 {
+    justify-self: center;
+    padding-bottom: 2rem;
+}
+
 p {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     color: Black;
@@ -168,7 +173,6 @@ footer {
     margin: 2rem 0;
     background-color: #a9a8bb;
 }
-
 
 
 form {
