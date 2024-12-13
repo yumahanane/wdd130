@@ -23,6 +23,15 @@ p {
     padding: 0.5rem;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    padding: 0.5rem;
+}
+
 .sociallinks a {
     text-decoration: none;
 }
@@ -160,3 +169,105 @@ footer {
     background-color: #a9a8bb;
 }
 
+
+
+form {
+    display: grid;
+    width: 408px;
+    margin: 0 5px; 
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: rgba(239, 236, 236, 0.799);
+    grid-area: 2 / 1 / 4 / 2;
+}
+
+label {
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0.3rem 0;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: center;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.radio {
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+
+
+button {
+    background-color: navy;
+    color: white;
+    max-width: fit-content;
+    margin: 1rem;
+    padding: 7px;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: rgb(110, 160, 110);
+}
+
+.submit {
+    justify-self: center;
+}
+
+.checkbox {
+    display: inline;
+    padding: 1rem 0 2rem;
+}
+
+.contact {
+    grid-area: 2 / 2 / 3 / 3;
+    border: 1px solid black;
+    border-radius: 15px;
+    width:fit-content;
+    padding: 1rem;
+    background-color: #474d8a;
+    font-weight: 600;
+
+}
+
+.contact p {
+    color: white;
+}
+
+.employees {
+    display: flex;
+    grid-area: 4 / 1 / 5 / 3;
+    justify-self: center;
+}
+
+.employees figure {
+    display: block;
+    padding: 2rem;
+}
+
+.container{
+    display: grid;
+    width: 840px;
+    gap: 20px;
+}
+
+.legend {
+    color: navy;
+    font-size: 1.5rem;
+}
