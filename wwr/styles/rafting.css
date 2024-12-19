@@ -517,20 +517,35 @@ section img {
 }
 
 .information p {
-    padding: 5px 10px;
+    padding: 0 1.8rem;
 }
 
 .information h2 {
-    padding: 0 0 1.5rem;
+    padding: 0 0 1.5rem 1rem;
 }
 
 .information h3 {
-    padding: 1.5rem 0 0.5rem;
+    padding: 1rem 0 1rem 1rem;;
 }
 
 .table {
     grid-column: 1;
+    border: 1px solid black;
+    margin: 5px;
 }
+
+.table h2 {
+    display: block;
+    margin-left: 0;
+    margin-left: 0;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+tr:hover {background-color: #D6EEEE;}
 
 .photos {
     display: grid;
