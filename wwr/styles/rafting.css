@@ -83,13 +83,13 @@ main {
 }
 
 
-article img {
+.hero article img {
     float: right;
     max-width: 150px;
     margin: 1rem;
 }
 
-article p {
+.hero article p {
     font-family: 'DM Serif Text', 'Open Sans', Helvetica, sans-serif;
     font-style: oblique;
     font-size: 1.2rem;
@@ -141,10 +141,12 @@ header nav a {
     grid-column: 2;
     grid-row: 2;
     margin: 0.5rem;
+    width: 300px;
 }
 
 .history p {
     grid-row: 2;
+    font-size: 1.1rem;
 }
 
 section h2 {
@@ -157,7 +159,7 @@ section h2 {
     margin-top: 10px;
 }
 
-figure img {
+.gallery figure img {
     width: 150px;
     flex: 1;
 }
@@ -304,20 +306,32 @@ button:hover {
 .banner1 article {
     position: absolute;
     right: 73px;
-    bottom: 10px;
+    bottom: 40px;
     width: 700px;
     height: auto; 
     text-align: center;
 }
 
-
-.banner1 article p {
+.banner1 article h2 {
     font-family: 'DM Serif Text', 'Open Sans', Helvetica, sans-serif;
     font-style: oblique;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
+}
+
+.banner1 article a {
+    background-color: navy;
+    border: 1px solid navy;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.banner1 article a:hover {
+    background-color: rgb(110, 160, 110);
 }
 
 
@@ -329,22 +343,46 @@ button:hover {
 
 .message p {
     text-align: center;
+    font-size: 1.1rem;
 }
 
-.message button {
+
+.message a {
     display: block;
     justify-self: center;
+    background-color: navy;
+    border: 1px solid navy;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 1rem;
+
+}
+
+.message a:hover {
+    background-color: rgb(110, 160, 110);
 }
 
 .offerings {
     display: flex;
     justify-self: center;
+    width: 840px;
+    height: auto;
 }
 
 .offerings figure {
     display: block;
-    padding: 2rem;
+    padding: 2rem 1rem;
     align-self: center;
+}
+
+.offerings figcaption {
+    font-size: 1.1rem;
+}
+
+.offerings img {
+    width: 250px;
 }
 
 
@@ -382,9 +420,130 @@ button:hover {
     padding: 1rem;
 }
 
-
-
-.banner2 form {
+.banner2 form{
     grid-column: 2;
     grid-row: 1;
 }
+
+
+.contact_banner {
+    display: grid;
+    background-color: #56a2c3be;
+    width: 840px;
+    height: auto;
+}
+
+.contact_banner img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 500px;
+    height: auto;
+    padding: 1rem;
+}
+
+.contact_banner h2 {
+    color: white;
+    font-weight: 100;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact_banner article{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+}
+
+.contact_banner p {
+    text-align: center;
+    margin: 1rem 0  1.5rem;
+}
+
+.contact_banner article a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: navy;
+    border: 1px solid navy;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    width: fit-content;
+    text-align: center;
+
+}
+
+.contact_banner a:hover {
+    background-color: rgb(110, 160, 110);
+}
+
+
+
+.trips {
+    display: flex;
+    justify-content: center;
+    width: 840px;
+    height: auto;
+}
+
+.trips figure {
+    display: block;
+    padding: 2rem 1rem;
+    align-self: center;
+}
+
+.trips figcaption {
+    font-size: 1.1rem;
+}
+
+.trips img {
+    width: 250px;
+}
+
+section img {  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.information {
+    display: grid;
+    background-color: rgba(133, 137, 140, 0.062);
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.information p {
+    padding: 5px 10px;
+}
+
+.information h2 {
+    padding: 0 0 1.5rem;
+}
+
+.information h3 {
+    padding: 1.5rem 0 0.5rem;
+}
+
+.table {
+    grid-column: 1;
+}
+
+.photos {
+    display: grid;
+    align-items: center;
+}
+
+.photos img {
+    width: 250px;
+    padding: 0;
+    margin: 0;
+}
+
+.equipment {
+    grid-column: 3;
+}
+
